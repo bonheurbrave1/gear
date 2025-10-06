@@ -23,24 +23,6 @@ const navItems = [
     { 
       name: 'Projects', 
       path: '/projects',
-      dropdown: [
-        { name: 'Commercial', path: '/projects/commercial' },
-        { name: 'Manufacturing', path: '/projects/manufacturing' },
-        { name: 'Industrial', path: '/projects/industrial' },
-        { name: 'Residential', path: '/projects/residential' },
-        { name: 'Sports & Leisure', path: '/projects/sports-leisure' },
-        { name: 'Warehousing', path: '/projects/warehousing' },
-        { name: 'Workshops', path: '/projects/workshops' },
-        { name: 'Auto Dealerships', path: '/projects/auto-dealerships' },
-        { name: 'Food & Beverage', path: '/projects/food-beverage' },
-        { name: 'Logistic Areas', path: '/projects/logistic-areas' },
-        { name: 'Retail', path: '/projects/retail' },
-        { name: 'Agriculture', path: '/projects/agriculture' },
-        { name: 'Aviation', path: '/projects/aviation' },
-        { name: 'Education', path: '/projects/education' },
-        { name: 'Hospitality & Leisure', path: '/projects/hospitality-leisure' },
-        { name: 'Others', path: '/projects/others' }
-      ]
     },
     { 
       name: 'Services', 

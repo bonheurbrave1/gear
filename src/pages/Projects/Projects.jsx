@@ -78,7 +78,7 @@ const Projects = () => {
       className="pt-32"
     >
       {/* Header */}
-      <section className="py-20">
+      <section className="py-20 projects-back">
         <div className="container mx-auto px-6">
           <motion.h1
             className="text-5xl md:text-7xl font-bold mb-6"
@@ -124,28 +124,6 @@ const Projects = () => {
           </div>
         </div>
       </section>
-
-      {/* Filters */}
-      <section className="py-8 border-y border-gray-200">
-        <div className="container mx-auto px-6">
-          <div className="flex flex-wrap gap-4">
-            {categories.map((filter) => (
-              <button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
-                  activeFilter === filter
-                    ? 'bg-black text-white'
-                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-                }`}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Projects Grid */}
       <section className="py-20">
         <div className="container mx-auto px-6">
