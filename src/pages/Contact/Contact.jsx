@@ -69,24 +69,16 @@ const Contact = () => {
       className="pt-32"
     >
       {/* Header */}
-      <section className="py-20">
+      <section className="py-20 contact-back">
         <div className="container mx-auto px-6">
           <motion.h1
-            className="text-5xl md:text-7xl font-bold mb-6"
+            className="text-5xl md:text-7xl font-bold mb-6 py-6"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             Get In Touch
           </motion.h1>
-          <motion.p
-            className="text-xl text-gray-600 max-w-2xl"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Ready to start your next construction project? Contact us for a free consultation and let's build something amazing together.
-          </motion.p>
         </div>
       </section>
 
@@ -135,7 +127,7 @@ const Contact = () => {
                 viewport={{ once: true }}
               >
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
-                  Interactive Map Location
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31900.291447155512!2d30.057932840929677!3d-1.9378897748459862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6a40203f041%3A0x5f8434259d8c4393!2sKacyiru%2C%20Kigali!5e0!3m2!1sen!2srw!4v1759737749133!5m2!1sen!2srw" width="600" height="200"  loading="lazy"></iframe>
                 </div>
               </motion.div>
             </motion.div>
@@ -253,57 +245,6 @@ const Contact = () => {
                 </form>
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Find answers to common questions about our construction services and process.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                question: "How long does a typical construction project take?",
-                answer: "Project timelines vary based on scope and complexity. Commercial projects typically take 6-18 months, while residential projects range from 4-12 months."
-              },
-              {
-                question: "Do you provide free consultations?",
-                answer: "Yes, we offer complimentary initial consultations to discuss your project requirements, budget, and timeline."
-              },
-              {
-                question: "What areas do you serve?",
-                answer: "We serve the entire metropolitan area and surrounding regions. Contact us to confirm service availability in your location."
-              },
-              {
-                question: "Can you work with existing architectural plans?",
-                answer: "Absolutely. We can work with your existing plans or collaborate with your architect to refine the design."
-              }
-            ].map((faq, index) => (
-              <motion.div
-                key={index}
-                className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-lg font-semibold mb-3">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
