@@ -1,6 +1,6 @@
 // src/App.js (Final with all routes)
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -59,6 +59,7 @@ function AnimatedRoutes() {
         <Route path="/projects/agriculture" element={<Agriculture />} />
         <Route path="/projects/aviation" element={<Aviation />} />
         <Route path="/projects/education" element={<Education />} />
+        <Route path="*" element={<Navigate to={"/"}/>} />
         <Route path="/projects/hospitality-leisure" element={<HospitalityLeisure />} />
         <Route path="/projects/others" element={<Others />} />
       </Routes>

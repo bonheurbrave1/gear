@@ -1,25 +1,43 @@
 // src/pages/Projects/Residential.js
 import React from 'react';
 import ProjectCategory from '../../components/ProjectCategory/ProjectCategory';
-import sp1 from "../../assets/projects/softpack/sp1.png"
-import sp2 from "../../assets/projects/softpack/sp2.png"
 
-import impala1 from "../../assets/projects/impala/impala1.png"
-import impala2 from "../../assets/projects/impala/impala2.png"
-import impala3 from "../../assets/projects/impala/impala3.png"
+import am1 from "../../assets/projects/am/am1.png"
+import am2 from "../../assets/projects/am/am2.png"
+import am3 from "../../assets/projects/am/am3.png"
 
-import bf1 from "../../assets/projects/bf/bf1.png"
-import bf2 from "../../assets/projects/bf/bf2.png"
-import bf3 from "../../assets/projects/bf/bf3.png"
-import bf4 from "../../assets/projects/bf/bf4.png"
-import bf5 from "../../assets/projects/bf/bf5.png"
-import bf6 from "../../assets/projects/bf/bf6.png"
-import bf7 from "../../assets/projects/bf/bf7.png"
-import bf8 from "../../assets/projects/bf/bf8.png"
+import fn1 from "../../assets/projects/fn/fn1.png"
+import fn2 from "../../assets/projects/fn/fn2.png"
+import fn3 from "../../assets/projects/fn/fn3.png"
 
-import rh1 from "../../assets/projects/rh/rh1.png"
-import rh2 from "../../assets/projects/rh/rh2.png"
-import rh3 from "../../assets/projects/rh/rh3.png"
+import ch1 from "../../assets/projects/ch/ch1.png"
+import ch2 from "../../assets/projects/ch/ch2.png"
+import ch3 from "../../assets/projects/ch/ch3.png"
+import ch4 from "../../assets/projects/ch/ch4.png"
+
+import bg1 from "../../assets/projects/bg/bg1.png"
+import bg2 from "../../assets/projects/bg/bg2.png"
+import bg3 from "../../assets/projects/bg/bg3.png"
+
+import bs1 from "../../assets/projects/bs/bs1.png"
+import bs2 from "../../assets/projects/bs/bs2.png"
+import bs3 from "../../assets/projects/bs/bs3.png"
+
+import lb1 from "../../assets/projects/lb/lb1.png"
+import lb2 from "../../assets/projects/lb/lb2.png"
+import lb3 from "../../assets/projects/lb/lb3.png"
+
+import rs1 from "../../assets/projects/rs/rs1.png"
+import rs2 from "../../assets/projects/rs/rs2.png"
+import rs3 from "../../assets/projects/rs/rs3.png"
+
+import sz1 from "../../assets/projects/sz/sz1.png"
+import sz2 from "../../assets/projects/sz/sz2.png"
+import sz3 from "../../assets/projects/sz/sz3.png"
+
+import rb1 from "../../assets/projects/rb/rb1.png"
+import rb2 from "../../assets/projects/rb/rb2.png"
+
 
 const Residential = () => {
   const projects = [
@@ -27,78 +45,78 @@ const Residential = () => {
       id: 1,
       title: "ALI MANJI RESIDENTIAL",
       images: [
-       impala1,impala2 , impala3
+       am1,am2 , am3
       ],
-      location: "Kigali, Rwanda - Kigali Economic zone"
+      location: "Kigali, Rwanda"
     },
     {
       id: 2,
       title: "FRANCOIS NANKOBOGO APARTMENTS",
       images: [
-        sp1,sp2
+        fn1,fn2,fn3
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "RWanda"
     },
     
     {
       id: 3,
       title: "CHRISTINE HAJABAKIGA RESIDENTIAL",
       images: [
-        bf1 , bf2 , bf3  , bf4 , bf5 , bf6 ,bf7 , bf8
+        ch1 , ch2 , ch3 , ch4
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
    
     {
       id: 4,
       title: "BUMBOGO TWIN HOUSE",
       images: [
-        rh1,rh2,rh3
+        bg1 , bg2 , bg3 
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
    
     {
       id: 5,
       title: "BUSANZA RESIDENTIAL",
       images: [
-        rh1,rh2,rh3
+        bs1,bs2,bs3
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
    
     {
       id: 6,
       title: "LIBAN APPARTMENTS",
       images: [
-        rh1,rh2,rh3
+        lb1,lb2,lb3
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
    
     {
       id: 7,
       title: "RUSORORO RESIDENTIAL",
       images: [
-        rh1,rh2,rh3
+        rs1,rs2,rs3
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
     {
       id: 8,
       title: "SENZEYI APARTMENTS",
       images: [
-        rh1,rh2,rh3
+        sz1,sz2,sz3
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
     {
       id: 9,
       title: "REBERO ESTATE",
       images: [
-        rh1,rh2,rh3
+        rb1,rb2
       ],
-      location: "Kigali, Rwanda Economic zone"
+      location: "Kigali"
     },
    
   ];
