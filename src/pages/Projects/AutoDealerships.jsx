@@ -7,7 +7,7 @@ const AutoDealerships = () => {
     {
       id: 1,
       title: "Luxury Automotive Campus",
-      image: "https://images.unsplash.com/photo-1592198084033-aade902d1aae?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: "https://www.google.com/imgres?q=automotive%20campus%20building&imgurl=https%3A%2F%2Fwww.kadans.com%2Fwp-content%2Fuploads%2FLucht-6-1600x1200.jpg&imgrefurl=https%3A%2F%2Fwww.kadans.com%2Fscience-clusters%2Fautomotive-campus-helmond%2F&docid=vimCYxDdFLo5LM&tbnid=YeTMstISTJcy0M&vet=12ahUKEwiqrN6lkI-QAxU90wIHHWnHHZMQM3oECCAQAA..i&w=1600&h=1200&hcb=2&ved=2ahUKEwiqrN6lkI-QAxU90wIHHWnHHZMQM3oECCAQAA",
       year: "2024",
       location: "Beverly Hills, CA",
       description: "Premium luxury car dealership with showroom, service center, and customer lounge.",

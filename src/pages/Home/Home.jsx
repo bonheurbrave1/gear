@@ -31,9 +31,8 @@ const Home = () => {
 
   const stats = [
     { number: "50+", label: "Projects Completed" },
-    { number: "15", label: "Years Experience" },
+    { number: new Date().getFullYear() - 2008, label: "Years Experience" },
     { number: "100+", label: "Team Members" },
-    { number: "25", label: "Awards Won" }
   ];
 
   return (

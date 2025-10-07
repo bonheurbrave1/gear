@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
-
+import logo from "../../assets/logo.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,7 +56,9 @@ const navItems = [
               isScrolled ? 'text-black' : 'text-white'
             }`}
           >
-            <Link to="/">GEAR</Link>
+            <Link to={"/"}>
+            <img src={logo} alt="logoimage" width={100} height={100}/>
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}

@@ -74,15 +74,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <HiLocationMarker className="w-5 h-5 text-gray-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">123 Construction Ave, Downtown, City 10001</span>
+                <span className="text-gray-400">Kigali, Rwanda</span>
               </div>
               <div className="flex items-center space-x-3">
                 <HiPhone className="w-5 h-5 text-gray-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">(+250) 788305067</span>
               </div>
               <div className="flex items-center space-x-3">
                 <HiMail className="w-5 h-5 text-gray-400" />
-                <span className="text-gray-400">info@gearconstruction.com</span>
+                <span className="text-gray-400">emile@gear.rw</span>
               </div>
             </div>
           </motion.div>

@@ -88,203 +88,182 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Building excellence since 2008. We are committed to delivering exceptional construction projects that stand the test of time.
+            GEAR Construction LTD. is a limited liability company incorporated
+in Rwanda under the company registration code 106638261 with
+Rwanda Development Board (RDB).
+</motion.p>
+<motion.p
+            className="text-xl text-gray-600 max-w-2xl pt-5"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+The company is involved in projects in Rwanda and is eyeing the
+East African market especially DRC, Kenya and South Soudan. The
+company has enjoyed steady growth over the years and can now
+handle projects up to FRW 5 billion.
           </motion.p>
         </div>
       </section>
 
-      {/* Story Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Story</h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  Founded in 2008, GEAR Construction began as a small team of passionate builders with a vision to transform the construction industry through innovation, quality, and client-focused service.
-                </p>
-                <p>
-                  Over the past 15 years, we've grown into a trusted name in commercial and residential construction, completing over 50 major projects across the region. Our commitment to excellence has earned us numerous industry awards and, more importantly, the trust of our clients.
-                </p>
-                <p>
-                  Today, we continue to push boundaries while maintaining our core values of quality craftsmanship, innovative solutions, and collaborative partnerships.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-4">
-                  <div className="aspect-square bg-gray-100 rounded-2xl overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                      alt="Construction Site"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="aspect-[4/3] bg-gray-100 rounded-2xl overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1503387769-00ec6e16d001?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                      alt="Team Meeting"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-4 mt-8">
-                  <div className="aspect-[3/4] bg-gray-100 rounded-2xl overflow-hidden">
-                    <img
-                      src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                      alt="Completed Project"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       {/* Values Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Values</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              The principles that guide every decision we make and every project we undertake.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => (
-              <motion.div
-                key={value.title}
-                className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-black hover:text-white transition-all duration-500"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <value.icon className="w-12 h-12 mx-auto mb-4 text-gray-400 group-hover:text-white" />
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-gray-600 group-hover:text-gray-300 text-sm leading-relaxed">
-                  {value.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Leadership Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Meet the experienced professionals who lead our projects to success.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                className="text-center group cursor-pointer"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-              >
-                <div className="relative overflow-hidden rounded-2xl bg-gray-100 aspect-square mb-6">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-gray-600 mb-2">{member.role}</p>
-                <p className="text-sm text-gray-500">{member.experience} Experience</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-20 bg-black text-white">
-        <div className="container mx-auto px-6">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Journey</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Key milestones in our growth and development since 2008.
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-700"></div>
-            
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={milestone.year}
-                  className={`relative flex items-center ${
-                    index % 2 === 0 ? 'justify-start' : 'justify-end'
-                  }`}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12'}`}>
-                    <div className="bg-gray-800 p-6 rounded-2xl hover:bg-gray-700 transition-colors duration-300">
-                      <div className="text-2xl font-bold text-accent mb-2">{milestone.year}</div>
-                      <p className="text-gray-300">{milestone.event}</p>
-                    </div>
-                  </div>
-                  
-                  {/* Timeline dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-accent rounded-full border-4 border-black"></div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="py-20 bg-gray-50">
+  <div className="container mx-auto px-6">
+    <motion.div
+      className="text-center mb-16"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Values</h2>
+      <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+        The foundational principles that drive our commitment to excellence in construction management and design.
+      </p>
     </motion.div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {/* Quality Excellence */}
+      <motion.div
+        className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-blue-600 hover:text-white transition-all duration-500 border border-gray-100 shadow-lg"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="w-16 h-16 mx-auto mb-6 bg-blue-100 group-hover:bg-white rounded-full flex items-center justify-center">
+          <i className="fas fa-award text-blue-600 group-hover:text-blue-600 text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold mb-4">Quality Excellence</h3>
+        <p className="text-gray-600 group-hover:text-gray-100 text-base leading-relaxed mb-4">
+          Setting benchmarks in construction quality, technology, and delivery while exceeding client expectations with superior workmanship.
+        </p>
+        <div className="mt-4 pt-4 border-t border-gray-200 group-hover:border-gray-400">
+          <p className="text-sm text-gray-500 group-hover:text-gray-300">
+            Nationally & internationally acknowledged quality standards
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Health & Safety */}
+      <motion.div
+        className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-green-600 hover:text-white transition-all duration-500 border border-gray-100 shadow-lg"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="w-16 h-16 mx-auto mb-6 bg-green-100 group-hover:bg-white rounded-full flex items-center justify-center">
+          <i className="fas fa-shield-alt text-green-600 group-hover:text-green-600 text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold mb-4">Health & Safety</h3>
+        <p className="text-gray-600 group-hover:text-gray-100 text-base leading-relaxed mb-4">
+          Committed to providing safe working environments, equipment, and continuous improvement of safety protocols for all employees.
+        </p>
+        <div className="mt-4 pt-4 border-t border-gray-200 group-hover:border-gray-400">
+          <p className="text-sm text-gray-500 group-hover:text-gray-300">
+            Full compliance with health & safety legal requirements
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Innovation & Development */}
+      <motion.div
+        className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-purple-600 hover:text-white transition-all duration-500 border border-gray-100 shadow-lg"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="w-16 h-16 mx-auto mb-6 bg-purple-100 group-hover:bg-white rounded-full flex items-center justify-center">
+          <i className="fas fa-lightbulb text-purple-600 group-hover:text-purple-600 text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold mb-4">Innovation & Development</h3>
+        <p className="text-gray-600 group-hover:text-gray-100 text-base leading-relaxed mb-4">
+          Exploring tremendous capabilities to surge new avenues of development while creating, building, and designing with perfection every time.
+        </p>
+        <div className="mt-4 pt-4 border-t border-gray-200 group-hover:border-gray-400">
+          <p className="text-sm text-gray-500 group-hover:text-gray-300">
+            Pushing company standards higher through innovation
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Integrity & Ethics */}
+      <motion.div
+        className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-amber-600 hover:text-white transition-all duration-500 border border-gray-100 shadow-lg"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="w-16 h-16 mx-auto mb-6 bg-amber-100 group-hover:bg-white rounded-full flex items-center justify-center">
+          <i className="fas fa-handshake text-amber-600 group-hover:text-amber-600 text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold mb-4">Integrity & Ethics</h3>
+        <p className="text-gray-600 group-hover:text-gray-100 text-base leading-relaxed mb-4">
+          Honesty and integrity as underlying considerations on every project, maintaining business principles that ensure stellar reputation.
+        </p>
+        <div className="mt-4 pt-4 border-t border-gray-200 group-hover:border-gray-400">
+          <p className="text-sm text-gray-500 group-hover:text-gray-300">
+            High level of repeat business through ethical practices
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Client Satisfaction */}
+      <motion.div
+        className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-red-600 hover:text-white transition-all duration-500 border border-gray-100 shadow-lg"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="w-16 h-16 mx-auto mb-6 bg-red-100 group-hover:bg-white rounded-full flex items-center justify-center">
+          <i className="fas fa-users text-red-600 group-hover:text-red-600 text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold mb-4">Client Satisfaction</h3>
+        <p className="text-gray-600 group-hover:text-gray-100 text-base leading-relaxed mb-4">
+          Completing projects to client and consultant satisfaction while remaining on budget and on time with unparalleled service.
+        </p>
+        <div className="mt-4 pt-4 border-t border-gray-200 group-hover:border-gray-400">
+          <p className="text-sm text-gray-500 group-hover:text-gray-300">
+            Determined to consistently exceed expectations
+          </p>
+        </div>
+      </motion.div>
+
+      {/* Perfection in Execution */}
+      <motion.div
+        className="text-center group cursor-pointer p-8 rounded-2xl bg-white hover:bg-indigo-600 hover:text-white transition-all duration-500 border border-gray-100 shadow-lg"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
+        viewport={{ once: true }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="w-16 h-16 mx-auto mb-6 bg-indigo-100 group-hover:bg-white rounded-full flex items-center justify-center">
+          <i className="fas fa-hammer text-indigo-600 group-hover:text-indigo-600 text-2xl"></i>
+        </div>
+        <h3 className="text-2xl font-bold mb-4">Perfection in Execution</h3>
+        <p className="text-gray-600 group-hover:text-gray-100 text-base leading-relaxed mb-4">
+          From engineering concrete design mixes to superior finishes, we interpret and comply with all quality management requirements.
+        </p>
+        <div className="mt-4 pt-4 border-t border-gray-200 group-hover:border-gray-400">
+          <p className="text-sm text-gray-500 group-hover:text-gray-300">
+            Superior quality at the heart of everything we do
+          </p>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
+</motion.div>
   );
 };
 
