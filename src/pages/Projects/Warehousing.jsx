@@ -1,66 +1,80 @@
 // src/pages/Projects/Warehousing.js
 import React from 'react';
 import ProjectCategory from '../../components/ProjectCategory/ProjectCategory';
+import sp1 from "../../assets/projects/softpack/sp1.png"
+import sp2 from "../../assets/projects/softpack/sp2.png"
+
+import impala1 from "../../assets/projects/impala/impala1.png"
+import impala2 from "../../assets/projects/impala/impala2.png"
+import impala3 from "../../assets/projects/impala/impala3.png"
+
+import bf1 from "../../assets/projects/bf/bf1.png"
+import bf2 from "../../assets/projects/bf/bf2.png"
+import bf3 from "../../assets/projects/bf/bf3.png"
+import bf4 from "../../assets/projects/bf/bf4.png"
+import bf5 from "../../assets/projects/bf/bf5.png"
+import bf6 from "../../assets/projects/bf/bf6.png"
+import bf7 from "../../assets/projects/bf/bf7.png"
+import bf8 from "../../assets/projects/bf/bf8.png"
+
+import rh1 from "../../assets/projects/rh/rh1.png"
+import rh2 from "../../assets/projects/rh/rh2.png"
+import rh3 from "../../assets/projects/rh/rh3.png"
+
+import sl1 from "../../assets/projects/sl/sl1.png"
+import sl2 from "../../assets/projects/sl/sl2.png"
+import sl3 from "../../assets/projects/sl/sl3.png"
+
 
 const Warehousing = () => {
   const projects = [
     {
       id: 1,
-      title: "Regional Distribution Center",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2024",
-      location: "Memphis, TN",
-      description: "500,000 sq ft regional distribution center with advanced automation and logistics systems.",
-      features: ["Automated Systems", "Climate Control", "Security Systems"]
+      title: "IMPALA TRADING LTD WAREHOUSES IN KSEZ",
+      images: [
+       impala1,impala2 , impala3
+      ],
+      location: "Kigali, Rwanda - Kigali Economic zone"
     },
     {
       id: 2,
-      title: "Cold Storage Facility",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2023",
-      location: "Chicago, IL",
-      description: "Temperature-controlled warehouse for perishable goods with -20°C freezing capabilities.",
-      features: ["Temperature Control", "Food Grade", "Energy Efficient"]
+      title: "SOFT PACKAGING WAREHOUSES IN KIGALI SPECIAL ECONOMIC ZONE",
+      images: [
+        sp1,sp2
+      ],
+      location: "Kigali, Rwanda Economic zone"
     },
+    
     {
       id: 3,
-      title: "E-commerce Fulfillment Center",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2023",
-      location: "Reno, NV",
-      description: "Modern fulfillment center designed for high-volume e-commerce operations with robotic automation.",
-      features: ["Robotic Automation", "High Volume", "Order Processing"]
+      title: "BEST FASHION DESIGNER LTD KIGALI SPECIAL ECONOMIC ZONE",
+      images: [
+        bf1 , bf2 , bf3  , bf4 , bf5 , bf6 ,bf7 , bf8
+      ],
+      location: "Kigali, Rwanda Economic zone"
     },
+   
     {
-      id: 4,
-      title: "Bulk Storage Warehouse",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2022",
-      location: "Houston, TX",
-      description: "Heavy-duty warehouse for bulk material storage with specialized handling equipment.",
-      features: ["Bulk Storage", "Heavy Duty", "Material Handling"]
+      id: 3,
+      title: "RUHANGA WAREHOUSES",
+      images: [
+        rh1 , rh2 , rh3 
+      ],
+      location: "Kigali, Rwanda Economic zone"
     },
+   
     {
-      id: 5,
-      title: "Cross-Dock Facility",
-      image: "https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2022",
-      location: "Louisville, KY",
-      description: "Efficient cross-dock warehouse minimizing storage time and optimizing logistics flow.",
-      features: ["Cross-Dock Design", "Fast Turnaround", "Logistics Optimization"]
+      id: 3,
+      title: "SILVERSANDS INVESTEMENT LTD STORE WAREHOUSE AT KIGALI SPECIAL ECONIMIC ZONE",
+      images: [
+        sl1,sl2,sl3
+      ],
+      location: "Kigali, Rwanda - Special Economic zone"
     },
-    {
-      id: 6,
-      title: "Automated Storage System",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2021",
-      location: "Columbus, OH",
-      description: "Fully automated high-bay warehouse with robotic retrieval and inventory management systems.",
-      features: ["High-Bay Design", "Robotic Retrieval", "Inventory Management"]
-    }
+   
   ];
 
-  return <ProjectCategory category="warehousing" projects={projects} />;
+  return <ProjectCategory category="Warehousing" projects={projects} />;
 };
 
-export default Warehousing;
+export default Warehousing; 

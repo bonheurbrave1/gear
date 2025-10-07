@@ -1,39 +1,36 @@
 // src/pages/Projects/SportsLeisure.js
 import React from 'react';
 import ProjectCategory from '../../components/ProjectCategory/ProjectCategory';
+import sp1 from "../../assets/projects/softpack/sp1.png"
+import sp2 from "../../assets/projects/softpack/sp2.png"
+
+import impala1 from "../../assets/projects/impala/impala1.png"
+import impala2 from "../../assets/projects/impala/impala2.png"
+import impala3 from "../../assets/projects/impala/impala3.png"
+
+import eb1 from "../../assets/projects/ecoleberge/eb1.png"
+import eb2 from "../../assets/projects/ecoleberge/eb2.png"
+import eb3 from "../../assets/projects/ecoleberge/eb3.png"
+import eb4 from "../../assets/projects/ecoleberge/eb4.png"
+import eb5 from "../../assets/projects/ecoleberge/eb5.png"
+import eb6 from "../../assets/projects/ecoleberge/eb6.png"
+import eb7 from "../../assets/projects/ecoleberge/eb7.png"
+
 
 const SportsLeisure = () => {
   const projects = [
     {
       id: 1,
-      title: "Multi-Purpose Sports Arena",
-      image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2024",
-      location: "Los Angeles, CA",
-      description: "20,000-seat multi-purpose arena for sports, concerts, and entertainment events.",
-      features: ["Multi-Purpose", "20,000 Capacity", "Premium Suites"]
-    },
-    {
-      id: 2,
-      title: "Community Recreation Center",
-      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2023",
-      location: "Portland, OR",
-      description: "Comprehensive community center with pools, gyms, and recreational facilities.",
-      features: ["Community Focus", "Multiple Facilities", "Accessible Design"]
-    },
-    {
-      id: 3,
-      title: "Professional Training Facility",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2023",
-      location: "Orlando, FL",
-      description: "State-of-the-art training facility for professional athletes and teams.",
-      features: ["Professional Grade", "Sports Science", "Recovery Facilities"]
+      title: "ISPORT HALL ECOLE BELGE DE KIGALI- GISOZI CAMPUS",
+      images: [
+        eb1,eb2,eb3 , eb4, eb5 ,eb6 ,eb7
+      ],
+      location: "Kigali, Rwanda - Gisozi campus"
     }
+   
   ];
 
-  return <ProjectCategory category="sports-leisure" projects={projects} />;
+  return <ProjectCategory category="SportsLeisure" projects={projects} />;
 };
 
-export default SportsLeisure;
+export default SportsLeisure; 

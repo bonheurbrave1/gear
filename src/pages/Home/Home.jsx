@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiArrowRight, HiPlay } from 'react-icons/hi';
-
+import industrial from "../../assets/projects/industrial.png"
 const Home = () => {
   const featuredProjects = [
     {
@@ -24,7 +24,7 @@ const Home = () => {
       id: 3,
       title: "Industrial Facility",
       category: "Industrial",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: industrial,
       year: "2023"
     }
   ];

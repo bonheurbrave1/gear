@@ -1,39 +1,109 @@
 // src/pages/Projects/Residential.js
 import React from 'react';
 import ProjectCategory from '../../components/ProjectCategory/ProjectCategory';
+import sp1 from "../../assets/projects/softpack/sp1.png"
+import sp2 from "../../assets/projects/softpack/sp2.png"
+
+import impala1 from "../../assets/projects/impala/impala1.png"
+import impala2 from "../../assets/projects/impala/impala2.png"
+import impala3 from "../../assets/projects/impala/impala3.png"
+
+import bf1 from "../../assets/projects/bf/bf1.png"
+import bf2 from "../../assets/projects/bf/bf2.png"
+import bf3 from "../../assets/projects/bf/bf3.png"
+import bf4 from "../../assets/projects/bf/bf4.png"
+import bf5 from "../../assets/projects/bf/bf5.png"
+import bf6 from "../../assets/projects/bf/bf6.png"
+import bf7 from "../../assets/projects/bf/bf7.png"
+import bf8 from "../../assets/projects/bf/bf8.png"
+
+import rh1 from "../../assets/projects/rh/rh1.png"
+import rh2 from "../../assets/projects/rh/rh2.png"
+import rh3 from "../../assets/projects/rh/rh3.png"
 
 const Residential = () => {
   const projects = [
     {
       id: 1,
-      title: "Luxury Condominium Tower",
-      image: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2024",
-      location: "Miami, FL",
-      description: "55-story luxury condominium with panoramic views and premium amenities.",
-      features: ["Luxury Finishes", "Panoramic Views", "Premium Amenities"]
+      title: "ALI MANJI RESIDENTIAL",
+      images: [
+       impala1,impala2 , impala3
+      ],
+      location: "Kigali, Rwanda - Kigali Economic zone"
     },
     {
       id: 2,
-      title: "Suburban Community Development",
-      image: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2023",
-      location: "Austin, TX",
-      description: "Master-planned community with single-family homes and community facilities.",
-      features: ["Master-Planned", "Community Facilities", "Green Spaces"]
+      title: "FRANCOIS NANKOBOGO APARTMENTS",
+      images: [
+        sp1,sp2
+      ],
+      location: "Kigali, Rwanda Economic zone"
     },
+    
     {
       id: 3,
-      title: "Urban Apartment Complex",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-      year: "2023",
-      location: "Denver, CO",
-      description: "Mixed-income apartment complex in urban center with modern amenities.",
-      features: ["Mixed-Income", "Urban Location", "Modern Amenities"]
-    }
+      title: "CHRISTINE HAJABAKIGA RESIDENTIAL",
+      images: [
+        bf1 , bf2 , bf3  , bf4 , bf5 , bf6 ,bf7 , bf8
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+   
+    {
+      id: 4,
+      title: "BUMBOGO TWIN HOUSE",
+      images: [
+        rh1,rh2,rh3
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+   
+    {
+      id: 5,
+      title: "BUSANZA RESIDENTIAL",
+      images: [
+        rh1,rh2,rh3
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+   
+    {
+      id: 6,
+      title: "LIBAN APPARTMENTS",
+      images: [
+        rh1,rh2,rh3
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+   
+    {
+      id: 7,
+      title: "RUSORORO RESIDENTIAL",
+      images: [
+        rh1,rh2,rh3
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+    {
+      id: 8,
+      title: "SENZEYI APARTMENTS",
+      images: [
+        rh1,rh2,rh3
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+    {
+      id: 9,
+      title: "REBERO ESTATE",
+      images: [
+        rh1,rh2,rh3
+      ],
+      location: "Kigali, Rwanda Economic zone"
+    },
+   
   ];
 
-  return <ProjectCategory category="residential" projects={projects} />;
+  return <ProjectCategory category="Residential" projects={projects} />;
 };
 
-export default Residential;
+export default Residential; 

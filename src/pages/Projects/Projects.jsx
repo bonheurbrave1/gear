@@ -3,39 +3,42 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiArrowRight } from 'react-icons/hi';
-
+import appartment from "../../assets/projects/appartment.png"
+import industrial from "../../assets/projects/industrial.png"
+import warehouse from "../../assets/projects/warehouse.png"
+import residential from "../../assets/projects/residential.png"
+import sports from "../../assets/projects/sports.png"
+import manufacturing from "../../assets/projects/manufacturing.png"
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   
   const categories = [
-    'All', 'Commercial', 'Manufacturing', 'Industrial', 'Residential', 
-    'Sports & Leisure', 'Warehousing', 'Workshops', 'Auto Dealerships',
-    'Food & Beverage', 'Logistic Areas', 'Retail', 'Agriculture',
-    'Aviation', 'Education', 'Hospitality & Leisure', 'Others'
+    'All',"Residential", 'Manufacturing', 
+    'Sports & Leisure', 'Warehousing', 'Hospitality & Leisure',""
   ];
   
   const projects = [
     {
       id: 1,
-      title: "Skyline Office Tower",
+      title: "Residential apparments",
       category: "Commercial",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: residential,
       year: "2024",
       location: "New York, NY"
     },
     {
       id: 2,
-      title: "Modern Manufacturing Plant",
+      title: "Esperanza Manufacturing",
       category: "Manufacturing",
-      image: "https://images.unsplash.com/photo-1581093458791-8a6b22b6d334?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: manufacturing,
       year: "2023",
-      location: "Detroit, MI"
+      location: "Masoro Economi zone , Kigali Rwanda"
     },
     {
       id: 3,
       title: "Industrial Complex",
       category: "Industrial",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: industrial,
       year: "2023",
       location: "Chicago, IL"
     },
@@ -43,25 +46,25 @@ const Projects = () => {
       id: 4,
       title: "Luxury Residential Tower",
       category: "Residential",
-      image: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image:appartment ,
       year: "2023",
-      location: "Miami, FL"
+      location: "Liban Appartment"
     },
     {
       id: 5,
       title: "Sports Arena Complex",
       category: "Sports & Leisure",
-      image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: sports,
       year: "2022",
-      location: "Los Angeles, CA"
+      location: "Kigali , Ecole berge"
     },
     {
       id: 6,
       title: "Distribution Warehouse",
       category: "Warehousing",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image: warehouse,
       year: "2022",
-      location: "Dallas, TX"
+      location: "Kigali , Rwanda Economic zone"
     }
   ];
 
