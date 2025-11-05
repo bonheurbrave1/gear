@@ -29,26 +29,26 @@ const Contact = () => {
     {
       icon: HiPhone,
       title: "Phone",
-      content: "+1 (555) 123-4567",
+      content: "+250 788 305 067",
       description: "Mon-Fri from 8am to 6pm"
     },
     {
       icon: HiMail,
       title: "Email",
-      content: "info@gearconstruction.com",
+      content: "info@gear.rw",
       description: "We reply within 24 hours"
     },
     {
       icon: HiLocationMarker,
       title: "Office",
-      content: "123 Construction Ave, Downtown",
-      description: "City, State 10001"
+      content: "Grand Pension Plaza 2 KN 3 Ave, Kigal",
+      description: "Rwanda , Kigali"
     },
     {
       icon: HiClock,
       title: "Business Hours",
-      content: "Monday - Friday: 8:00 - 18:00",
-      description: "Saturday: 9:00 - 14:00"
+      content: "Monday - Friday: 9:00AM - 5:00PM",
+      description: "Week-end: closed"
     }
   ];
 
@@ -127,7 +127,7 @@ const Contact = () => {
                 viewport={{ once: true }}
               >
                 <div className="w-full h-full flex items-center justify-center text-gray-500">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31900.291447155512!2d30.057932840929677!3d-1.9378897748459862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6a40203f041%3A0x5f8434259d8c4393!2sKacyiru%2C%20Kigali!5e0!3m2!1sen!2srw!4v1759737749133!5m2!1sen!2srw" width="600" height="200"  loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.5157218780178!2d30.060287799999998!3d-1.9466643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4241b371773%3A0x505425b2f07af96a!2sGrand%20Pension%20Plaza%2C%202%20KN%203%20Ave%2C%20Kigali!5e0!3m2!1sen!2srw!4v1762270526567!5m2!1sen!2srw" width="600" height="200"  loading="lazy"></iframe>
                 </div>
               </motion.div>
             </motion.div>
@@ -193,7 +193,7 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="+250 788 305 067"
                       />
                     </div>
                     

@@ -1,10 +1,20 @@
 
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
+*{
+  font-family: "Nunito"  , sans-serif;
+}
 .projects-back{
   background-image: url("../src/assets/projectsback.png");
 }
 .contact-back{
   background-image: url("../src/assets/contactback.png");
+}
+
+
+.hero{
+  background: url("./assets/background.jpg");
+  background-position: center;
+  background-size:contain;
+  background-repeat: no-repeat;
 }

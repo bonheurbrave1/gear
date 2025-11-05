@@ -28,12 +28,16 @@ import Aviation from './pages/Projects/Aviation';
 import Education from './pages/Projects/Education';
 import HospitalityLeisure from './pages/Projects/HospitalityLeisure';
 import Others from './pages/Projects/Others';
-
+import VideoReel from './pages/VideoReel';
+import ex from "./assets/ex.mp4"
 // import './App.css';
 
 function AnimatedRoutes() {
   const location = useLocation();
-  
+  const companyVideo = {
+    src: ex,
+    
+  };
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
@@ -45,6 +49,9 @@ function AnimatedRoutes() {
         <Route path="/contact" element={<Contact />} />
         
         {/* Project Category Pages */}
+        {/* <Route path="/video-reel" element={
+          <VideoReel video={companyVideo} />
+        } /> */}
         <Route path="/projects/commercial" element={<Commercial />} />
         <Route path="/projects/manufacturing" element={<Manufacturing />} />
         <Route path="/projects/industrial" element={<Industrial />} />

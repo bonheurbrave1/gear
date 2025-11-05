@@ -4,35 +4,39 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { HiArrowRight, HiPlay } from 'react-icons/hi';
 import industrial from "../../assets/projects/industrial.png"
+import back from "../../assets/background.jpg"
+import sporthall from "../../assets/sporthall.jpg"
+import industry from "../../assets/industry.jpg"
+import investment from "../../assets/investment.jpg"
 const Home = () => {
   const featuredProjects = [
     {
       id: 1,
-      title: "Modern Commercial Complex",
+      title: "Sport Hall Ecole Berge",
       category: "Commercial",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      image:sporthall,
       year: "2024"
     },
     {
       id: 2,
-      title: "Luxury Residential Tower",
-      category: "Residential",
-      image: "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Janiya Project",
+      category: "Industrial",
+      image: investment,
       year: "2023"
     },
     {
       id: 3,
       title: "Industrial Facility",
       category: "Industrial",
-      image: industrial,
+      image: industry,
       year: "2023"
     }
   ];
 
   const stats = [
-    { number: "50+", label: "Projects Completed" },
-    { number: new Date().getFullYear() - 2008, label: "Years Experience" },
-    { number: "100+", label: "Team Members" },
+    { number: "20+", label: "Projects Completed" },
+    { number: new Date().getFullYear() - 2011, label: "Years Experience" },
+    { number: "37+", label: "Team Members" },
   ];
 
   return (
@@ -43,12 +47,10 @@ const Home = () => {
       transition={{ duration: 0.8 }}
     >
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen hero flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: 'url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80")',
-          }}
+          
         />
         
         <div className="absolute inset-0 bg-black/50" />
@@ -85,11 +87,12 @@ const Home = () => {
               View Our Work
               <HiArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
-            
+            <Link to={"video-reel"}>
             <button className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-medium rounded-full hover:bg-white hover:text-black transition-all duration-300 group text-lg">
               <HiPlay className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
               Watch Showreel
             </button>
+            </Link>
           </motion.div>
         </div>
         
@@ -159,6 +162,7 @@ const Home = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
+              <Link to={"/projects"}>
               <motion.div
                 key={project.id}
                 className="group cursor-pointer"
@@ -166,7 +170,7 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
-              >
+                >
                 <div className="relative overflow-hidden bg-gray-100 aspect-[4/5] mb-4">
                   <motion.img
                     src={project.image}
@@ -188,6 +192,7 @@ const Home = () => {
                   <span className="text-gray-400 text-sm">{project.year}</span>
                 </div>
               </motion.div>
+            </Link>
             ))}
           </div>
 
